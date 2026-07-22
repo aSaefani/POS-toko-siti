@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Register - TOKO SITI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#f4f1de",
+                        "error": "#a73b21",
+                        "secondary-container": "#f4e38e",
+                        "inverse-surface": "#0b0f0e",
+                        "tertiary-fixed": "#f4f1de",
+                        "on-error-container": "#6e1400",
+                        "tertiary-fixed-dim": "#e6e3d0",
+                        "on-background": "#2d3432",
+                        "on-secondary-fixed-variant": "#675c14",
+                        "inverse-primary": "#c7fbc7",
+                        "tertiary-dim": "#545446",
+                        "surface-container-high": "#e4e9e7",
+                        "on-surface": "#2d3432",
+                        "error-container": "#fd795a",
+                        "primary": "#3c6941",
+                        "primary-container": "#bcefbc",
+                        "surface-container-low": "#f1f4f2",
+                        "outline-variant": "#acb3b1",
+                        "secondary-fixed": "#f4e38e",
+                        "error-dim": "#791903",
+                        "on-tertiary-fixed-variant": "#666556",
+                        "on-primary-container": "#2e5b34",
+                        "outline": "#757c7a",
+                        "surface": "#f8faf8",
+                        "on-primary-fixed-variant": "#38653d",
+                        "tertiary": "#616051",
+                        "on-primary-fixed": "#1b4823",
+                        "background": "#f8faf8",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#dde4e1",
+                        "primary-dim": "#305d35",
+                        "secondary": "#6b5f18",
+                        "surface-variant": "#dde4e1",
+                        "on-error": "#fff7f6",
+                        "on-surface-variant": "#59615f",
+                        "on-secondary-container": "#5d520a",
+                        "surface-bright": "#f8faf8",
+                        "secondary-dim": "#5e530b",
+                        "on-secondary-fixed": "#493f00",
+                        "on-primary": "#e9ffe5",
+                        "surface-tint": "#3c6941",
+                        "surface-dim": "#d4dcd9",
+                        "on-tertiary-container": "#5c5b4c",
+                        "primary-fixed": "#bcefbc",
+                        "on-tertiary-fixed": "#49493b",
+                        "primary-fixed-dim": "#aee1af",
+                        "inverse-on-surface": "#9b9d9c",
+                        "on-tertiary": "#fdf9e6",
+                        "surface-container": "#eaefec",
+                        "secondary-fixed-dim": "#e5d582",
+                        "on-secondary": "#fff8e8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+    <!-- TopAppBar Suppressed as per "The Destination Rule" for Transactional/Sign-up pages -->
+    <main class="flex-grow flex items-center justify-center px-4 py-12 relative overflow-hidden">
+        <!-- Background Editorial Elements -->
+        <div class="absolute top-[-10%] right-[-5%] w-[400px] h-[400px] bg-primary-container/20 rounded-full blur-3xl">
+        </div>
+        <div
+            class="absolute bottom-[-10%] left-[-5%] w-[300px] h-[300px] bg-secondary-container/20 rounded-full blur-3xl">
+        </div>
+        <div class="w-full max-w-xl z-10">
+            <!-- Brand Anchor -->
+            <div class="text-center mb-8">
+                <span class="text-primary font-display text-2xl font-bold tracking-tighter uppercase">TOKO SITI</span>
+                <h1 class="text-on-surface text-4xl font-extrabold tracking-tight mt-4">Join our community</h1>
+                <p class="text-on-surface-variant font-body mt-2">Start your journey as a premium merchant today.</p>
+            </div>
+            <!-- Registration Card -->
+            <div
+                class="bg-surface-container-lowest rounded-xl shadow-[0_32px_64px_-12px_rgba(45,52,50,0.04)] p-8 md:p-12 border border-outline-variant/10">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Full Name -->
+                        <div class="flex flex-col gap-2">
+                            <label class="text-on-surface font-label text-sm font-semibold ml-1" for="full-name">Full
+                                Name</label>
+                            <div class="relative">
+                                <input
+                                    class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3.5 text-on-surface placeholder:text-on-surface-variant/50 focus:ring-2 focus:ring-primary/20 transition-all font-body"
+                                    id="full-name" placeholder="Siti Aminah" type="text" />
+                            </div>
+                        </div>
+                        <!-- Email Address -->
+                        <div class="flex flex-col gap-2">
+                            <label class="text-on-surface font-label text-sm font-semibold ml-1" for="email">Email
+                                Address</label>
+                            <input
+                                class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3.5 text-on-surface placeholder:text-on-surface-variant/50 focus:ring-2 focus:ring-primary/20 transition-all font-body"
+                                id="email" placeholder="siti@tokositi.com" type="email" />
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Password -->
+                        <div class="flex flex-col gap-2">
+                            <label class="text-on-surface font-label text-sm font-semibold ml-1"
+                                for="password">Password</label>
+                            <div class="relative">
+                                <input
+                                    class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3.5 text-on-surface placeholder:text-on-surface-variant/50 focus:ring-2 focus:ring-primary/20 transition-all font-body"
+                                    id="password" placeholder="••••••••" type="password" />
+                            </div>
+                        </div>
+                        <!-- Confirm Password -->
+                        <div class="flex flex-col gap-2">
+                            <label class="text-on-surface font-label text-sm font-semibold ml-1"
+                                for="confirm-password">Confirm Password</label>
+                            <input
+                                class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3.5 text-on-surface placeholder:text-on-surface-variant/50 focus:ring-2 focus:ring-primary/20 transition-all font-body"
+                                id="confirm-password" placeholder="••••••••" type="password" />
+                        </div>
+                    </div>
+                    <!-- Terms & Conditions -->
+                    <div class="flex items-start gap-3 pt-2">
+                        <input
+                            class="mt-1 rounded border-outline-variant text-primary focus:ring-primary/20 bg-surface-container-low"
+                            id="terms" type="checkbox" />
+                        <label class="text-on-surface-variant text-sm font-body leading-relaxed" for="terms">
+                            I agree to the <a class="text-primary font-semibold hover:underline" href="#">Terms of
+                                Service</a> and <a class="text-primary font-semibold hover:underline" href="#">Privacy
+                                Policy</a>.
+                        </label>
+                    </div>
+                    <!-- Submit Button -->
+                    <button
+                        class="w-full bg-gradient-to-br from-primary to-primary-dim text-on-primary py-4 rounded-full font-display font-bold text-lg shadow-lg shadow-primary/10 hover:opacity-90 active:scale-[0.98] transition-all mt-4"
+                        type="submit">
+                        Create Account
+                    </button>
+                </form>
+                <!-- Divider -->
+                <!-- Social Proof / Alternative -->
+            </div>
+            <!-- Redirect to Login -->
+            <p class="text-center mt-8 text-on-surface-variant font-body">
+                Already have an account?
+                <a class="text-primary font-bold hover:underline ml-1" href="#">Sign In</a>
+            </p>
+        </div>
+    </main>
+    <!-- Footer Component from JSON -->
+    <footer
+        class="w-full border-t border-transparent tonal-shift bg-[#f1f4f2] dark:bg-[#232623] flex flex-col md:flex-row justify-between items-center px-12 py-8 w-full gap-4">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <span
+                class="font-['Manrope'] text-xs uppercase tracking-widest text-[#2d3432] dark:text-[#e1e3e0] opacity-50">©
+                2024 TOKO SITI Merchant Services</span>
+        </div>
+        <div class="flex gap-8">
+            <a class="font-['Manrope'] text-xs uppercase tracking-widest text-[#2d3432] dark:text-[#e1e3e0] opacity-50 hover:opacity-100 transition-opacity"
+                href="#">Terms</a>
+            <a class="font-['Manrope'] text-xs uppercase tracking-widest text-[#2d3432] dark:text-[#e1e3e0] opacity-50 hover:opacity-100 transition-opacity"
+                href="#">Support</a>
+            <a class="font-['Manrope'] text-xs uppercase tracking-widest text-[#2d3432] dark:text-[#e1e3e0] opacity-50 hover:opacity-100 transition-opacity"
+                href="#">Contact</a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Login | TOKO SITI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be_Vietnam_Pro:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#4a4e3b",
+                        "on-primary": "#fefcf0",
+                        "secondary-fixed": "#e6e9d5",
+                        "primary-container": "#f0f4e1",
+                        "primary-dim": "#7c8461",
+                        "tertiary": "#d4a373",
+                        "tertiary-dim": "#bc8a5f",
+                        "secondary": "#a9af8e",
+                        "on-primary-fixed": "#3a3f2d",
+                        "inverse-on-surface": "#fefcf0",
+                        "surface-dim": "#f5f7eb",
+                        "secondary-fixed-dim": "#d9dec0",
+                        "on-tertiary-fixed": "#432818",
+                        "error-dim": "#e07a5f",
+                        "on-surface": "#3a3f2d",
+                        "primary-fixed-dim": "#c2c9a9",
+                        "secondary-container": "#fefae0",
+                        "on-background": "#3a3f2d",
+                        "on-tertiary-container": "#432818",
+                        "primary-fixed": "#e6e9d5",
+                        "surface-bright": "#fefdf5",
+                        "on-surface-variant": "#6b705c",
+                        "primary": "#606c38",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#3a3f2d",
+                        "inverse-primary": "#e6e9d5",
+                        "surface-tint": "#606c38",
+                        "surface-variant": "#e9edc9",
+                        "tertiary-container": "#faedcd",
+                        "surface-container-highest": "#e9edc9",
+                        "surface": "#fefcf0",
+                        "on-primary-fixed-variant": "#4a4e3b",
+                        "outline-variant": "#ccd5ae",
+                        "surface-container": "#f5f7eb",
+                        "surface-container-low": "#fafbf4",
+                        "on-tertiary-fixed-variant": "#603808",
+                        "secondary-dim": "#a9af8e",
+                        "surface-container-high": "#f0f2e1",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#a3ad85",
+                        "on-secondary-container": "#3a3f2d",
+                        "error": "#bc6c25",
+                        "error-container": "#f4a261",
+                        "tertiary-fixed-dim": "#e9c46a",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#3a3f2d",
+                        "on-primary-container": "#283618",
+                        "on-error-container": "#264653",
+                        "on-secondary-fixed-variant": "#4a4e3b",
+                        "background": "#fefcf0",
+                        "tertiary-fixed": "#faedcd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #fefcf0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .vibrant-gradient {
+            background: linear-gradient(135deg, #606c38 0%, #283618 100%);
+        }
+
+        .ghost-border {
+            border: 1.5px solid rgba(163, 173, 133, 0.2);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+
+<body
+    class="text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen flex items-center justify-center p-6 md:p-12 relative overflow-hidden">
+    <!-- Decorative Background Elements (Soft Pastel Aesthetic) -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary-container/40 rounded-full blur-[120px]"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary-container/50 rounded-full blur-[120px]"></div>
+    <main
+        class="w-full max-w-[1200px] grid md:grid-cols-2 bg-surface-container-low rounded-xl overflow-hidden shadow-[0_20px_60px_rgba(40,54,24,0.08)] relative z-10">
+        <!-- Branding Section (Asymmetric Editorial Style) -->
+        <div class="hidden md:flex flex-col justify-between p-12 bg-surface">
+            <div>
+                <div class="flex items-center gap-3 mb-16">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <span class="material-symbols-outlined text-on-primary"
+                            style="font-variation-settings: 'FILL' 1;">storefront</span>
+                    </div>
+                    <span class="text-2xl font-black text-primary tracking-tighter">TOKO SITI</span>
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">
+                    Modern <span class="text-primary">Retail</span> <br />Made Simple.
+                </h1>
+                <p class="text-lg text-on-surface-variant max-w-sm leading-relaxed">
+                    The neighborhood merchant platform designed for speed, clarity, and a serene staff experience.
+                </p>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full overflow-hidden ghost-border">
+                    <img alt="Staff Member" class="w-full h-full object-cover grayscale-[20%]"
+                        data-alt="Close-up portrait of a friendly young merchant smiling in a sunlit retail shop with warm natural tones"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEFYMNpdbLfarU_MD4co0GMcwOB9mVhGxVaGd1_Nk5zLHL9PNoq-X-pjLN5OySpnkAiMW0AYEWeCeF8sR6BqFPFGHhppgw8SxVqad1zZPsUUcBssEIl2fu7k3wR1XnFaMOx6tDGPmUvxeoL5Gjc9ZM6KYmaGThkziaWmrw6EZRoMMGAnggqRQ2ao_h5kP91BRF51t3gdzx6e_nD2C9sggzn95jcUwU6i3SoH4u4rx90LLxQKegyJGyrP1FqNn5JkCMWnd_iup2UpM" />
+                </div>
+                <div>
+                    <p class="text-sm font-bold text-on-surface">Trusted by Siti's Team</p>
+                    <p class="text-xs text-on-surface-variant">Calm Merchant Ecosystem</p>
+                </div>
+            </div>
+        </div>
+        <!-- Login Form Section -->
+        <div class="p-8 md:p-16 flex flex-col justify-center bg-surface-container-lowest">
+            <div class="md:hidden flex items-center gap-2 mb-12">
+                <span class="text-xl font-black text-primary tracking-tighter">TOKO SITI</span>
+            </div>
+            <header class="mb-10">
+                <h2 class="text-3xl font-extrabold text-on-surface tracking-tight mb-2">Welcome Back</h2>
+                <p class="text-on-surface-variant">Sign in to your staff dashboard to continue.</p>
+            </header>
+            <form action="#" class="space-y-6">
+                <!-- Username/Email Field -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-bold text-on-surface-variant ml-4" for="identity">Email or
+                        Username</label>
+                    <div class="relative group">
+                        <span
+                            class="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors">person</span>
+                        <input
+                            class="w-full pl-14 pr-6 py-4 bg-surface-container rounded-full ghost-border focus:border-primary focus:ring-0 focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/40"
+                            id="identity" placeholder="staff_siti_01" type="text" />
+                    </div>
+                </div>
+                <!-- Password Field -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center px-4">
+                        <label class="text-sm font-bold text-on-surface-variant" for="password">Password</label>
+                        <a class="text-xs font-bold text-primary hover:underline" href="#">Forgot?</a>
+                    </div>
+                    <div class="relative group">
+                        <span
+                            class="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors">lock</span>
+                        <input
+                            class="w-full pl-14 pr-14 py-4 bg-surface-container rounded-full ghost-border focus:border-primary focus:ring-0 focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/40"
+                            id="password" placeholder="••••••••" type="password" />
+                        <button class="absolute right-5 top-1/2 -translate-y-1/2 text-on-surface-variant" type="button">
+                            <span class="material-symbols-outlined">visibility</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Remember Me -->
+                <div class="flex items-center gap-3 px-4">
+                    <input
+                        class="w-5 h-5 rounded-md border-outline-variant text-primary focus:ring-primary focus:ring-offset-background"
+                        id="remember" type="checkbox" />
+                    <label class="text-sm text-on-surface-variant font-medium cursor-pointer" for="remember">Keep me
+                        signed in</label>
+                </div>
+                <!-- Primary CTA -->
+                <div class="pt-4">
+                    <button
+                        class="w-full vibrant-gradient text-on-primary font-bold py-5 rounded-full shadow-[0_12px_24px_rgba(96,108,56,0.15)] active:scale-95 transition-transform flex items-center justify-center gap-2 group"
+                        type="submit">
+                        Sign In to Dashboard
+                        <span
+                            class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </button>
+                </div>
+            </form>
+            <!-- Bottom Meta -->
+            <footer
+                class="mt-12 pt-12 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center">
+                        <span class="material-symbols-outlined text-on-secondary-fixed">support_agent</span>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-on-surface">Need assistance?</p>
+                        <p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Contact
+                            Manager</p>
+                    </div>
+                </div>
+                <div class="text-[10px] text-on-surface-variant font-medium tracking-wide">
+                    © 2024 TOKO SITI VERSION 4.2.0
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!-- Contextual "The Vibrant Merchant" Floating Visuals (Soft Palette) -->
+    <div
+        class="absolute top-20 right-20 hidden xl:block w-32 h-32 bg-secondary-container/30 rounded-lg -rotate-12 ghost-border">
+    </div>
+    <div
+        class="absolute bottom-20 left-20 hidden xl:block w-48 h-48 bg-primary-container/20 rounded-xl rotate-6 ghost-border">
+    </div>
+</body>
+
+</html>
